@@ -1,0 +1,26 @@
+{
+  "name": "closures-and-priority-queues",
+  "version": "1.0.0",
+  "description": "Tasks",
+  "author": "Pablo Fernández <pablo.fernandez.otero@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "engineStrict": true,
+  "engines": {
+    "node": "12.13.0"
+  },
+  "scripts": {
+    "docker:build:test": "docker build -t pfernandez/closures-and-priority-queues -f Dockerfile.test --no-cache .",
+    "docker:run:test": "docker run --rm pfernandez/closures-and-priority-queues:latest",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "eslint": "6.6.0",
+    "eslint-config-airbnb-base": "14.0.0",
+    "eslint-plugin-import": "2.18.2",
+    "jest": "24.9.0"
+  },
+  "jest": {
+    "verbose": true
+  }
+}

@@ -1,0 +1,14 @@
+FROM mhart/alpine-node:12
+
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
+
+COPY package*.json ./
+
+ENV NODE_ENV dev
+
+RUN yarn install
+
+COPY . .
+
+CMD ["yarn", "test"]
