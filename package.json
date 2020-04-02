@@ -7,7 +7,7 @@
   "private": true,
   "engineStrict": true,
   "engines": {
-    "node": "12.13.0"
+    "node": "12.14.1"
   },
   "scripts": {
     "docker:build:test": "docker build -t pfernandez/closures-and-priority-queues -f Dockerfile.test --no-cache .",
@@ -15,10 +15,10 @@
     "test": "jest"
   },
   "devDependencies": {
-    "eslint": "6.6.0",
-    "eslint-config-airbnb-base": "14.0.0",
-    "eslint-plugin-import": "2.18.2",
-    "jest": "24.9.0"
+    "eslint": "6.8.0",
+    "eslint-config-airbnb-base": "14.1.0",
+    "eslint-plugin-import": "2.20.2",
+    "jest": "25.2.4"
   },
   "jest": {
     "verbose": true
