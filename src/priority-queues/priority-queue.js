@@ -13,7 +13,7 @@ class PriorityQueue {
   }
 
   bubbleDown() {
-    let pos = 0;
+    let pos = TOP;
     const condition = true;
     const last = this.last();
 
@@ -41,7 +41,7 @@ class PriorityQueue {
 
   bubbleUp() {
     let pos = this.last();
-    while (pos > 0) {
+    while (pos > TOP) {
       const parent = parentIndex(pos);
 
       if (this.compare(pos, parent)) {
